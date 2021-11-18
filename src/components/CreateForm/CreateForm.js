@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Form, Button, Avatar, List } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import 'antd/lib/form/style/css'
-import 'antd/lib/button/style/css'
+import 'antd/lib/form/style/css';
+import 'antd/lib/button/style/css';
 import 'antd/lib/avatar/style/css';
 import 'antd/lib/list/style/css';
 import axios from 'axios';
 
 import InputField from '../InputField/InputField';
+import SearchList from '../SearchList/SearchList';
 import styles from './style.module.css';
 
 const CreateForm = () => {
@@ -36,8 +37,8 @@ const CreateForm = () => {
     }
   };
 
-  const handleBlur = () => setData([]);
-
+  // const handleBlur = () => setData([]);
+console.log('data',data);
   return (
     <div className={styles.formWrapper}>
       <h2>Add a new company</h2>
@@ -52,7 +53,7 @@ const CreateForm = () => {
             prefix={SearchOutlined}
             placeholder='Name, website or representative email'
             onChange={handleChange}
-            onBlur={handleBlur}
+            // onBlur={handleBlur}
           />
         </Form.Item>
         <Form.Item className={styles.formButtonWrapper} shouldUpdate>
@@ -68,21 +69,7 @@ const CreateForm = () => {
         </Form.Item>
       </Form>
 
-      {data?.length > 0 && (
-        <List
-          itemLayout='horizontal'
-          dataSource={data}
-          renderItem={(d) => (
-            <List.Item>
-              <List.Item.Meta
-                avatar={<Avatar src={d?.logo} />}
-                title={<a href='https://ant.design'>{d.name}</a>}
-                description={d?.domain}
-              />
-            </List.Item>
-          )}
-        />
-      )}
+      {data?.length > 0 && <SearchList data={data} />}
     </div>
   );
 };
