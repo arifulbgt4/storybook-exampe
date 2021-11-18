@@ -1,0 +1,15 @@
+.formWrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+.inputField {
+  width: 75%;
+  margin: 0;
+}
+.formButtonWrapper {
+  width: 20%;
+  margin: 0;
+}
+.formButton {
+  float: right;
+}
