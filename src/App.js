@@ -1,5 +1,4 @@
 import CreateForm from './components/CreateForm/CreateForm';
-import 'antd/dist/antd.css';
 
 function App() {
   return (

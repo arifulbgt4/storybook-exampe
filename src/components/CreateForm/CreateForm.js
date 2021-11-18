@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Form, Button, Avatar, List } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
+import 'antd/lib/form/style/css'
+import 'antd/lib/button/style/css'
+import 'antd/lib/avatar/style/css';
+import 'antd/lib/list/style/css';
 import axios from 'axios';
 
 import InputField from '../InputField/InputField';
