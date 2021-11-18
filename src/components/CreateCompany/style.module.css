@@ -1,0 +1,50 @@
+.formWrapper {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.w100 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.description {
+  color: #9d9d9d;
+}
+
+.infoList {
+  padding: 0 30px 30px;
+  margin-top: 60px;
+}
+.companyDetails {
+  border-top: 1px solid #efefef;
+  margin: 0 !important;
+}
+.locationContainer {
+  padding-top: 30px;
+}
+.map {
+  height: 150px;
+}
+.companyContent {
+  border-left: 1px solid #efefef;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .companyContent {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .formWrapper {
+    text-align: center;
+  }
+  .location {
+    text-align: left;
+  }
+
+  .w100 {
+    margin: 0 !important;
+  }
+}

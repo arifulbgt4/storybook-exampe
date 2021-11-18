@@ -6,8 +6,8 @@ export default {
   component: CreateForm,
 };
 
-const InputFieldStory = ({ ...args }) => <CreateForm {...args} />;
+const CreateFormStory = ({ ...args }) => <CreateForm {...args} />;
 
-export const Basic = InputFieldStory.bind();
+export const Basic = CreateFormStory.bind();
 
 Basic.args = {};
