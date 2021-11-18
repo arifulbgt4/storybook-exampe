@@ -1,11 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import { List, Row, Col } from 'antd';
-import 'antd/lib/form/style/css';
-import 'antd/lib/button/style/css';
-import 'antd/lib/avatar/style/css';
 import 'antd/lib/list/style/css';
-import 'antd/lib/card/style/css';
 import 'antd/lib/row/style/css';
 import 'antd/lib/col/style/css';
 
