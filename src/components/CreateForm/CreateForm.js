@@ -37,8 +37,8 @@ const CreateForm = () => {
     }
   };
 
-  // const handleBlur = () => setData([]);
-console.log('data',data);
+  const handleBlur = () => setData([]);
+
   return (
     <div className={styles.formWrapper}>
       <h2>Add a new company</h2>
@@ -53,7 +53,7 @@ console.log('data',data);
             prefix={SearchOutlined}
             placeholder='Name, website or representative email'
             onChange={handleChange}
-            // onBlur={handleBlur}
+            onBlur={handleBlur}
           />
         </Form.Item>
         <Form.Item className={styles.formButtonWrapper} shouldUpdate>
