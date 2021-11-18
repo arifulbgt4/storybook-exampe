@@ -121,21 +121,18 @@ const CreateForm = () => {
         )}
       />
       <Row gutter={60} className={styles.companyDetails}>
-        <Col lg={16} md={24} style={{ paddingTop: '30px' }}>
+        <Col lg={16} md={24} className={styles.locationContainer}>
           <Row gutter={16}>
             <Col span={12} className={styles.location}>
               <h3>Location</h3>
               <p className={styles.description}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Commodi, magni laborum
+                165 Broadway 23rd fl, New York, NY <br />
+                10006. USA
               </p>
             </Col>
             <Col span={12}>
               <h3>Timezone</h3>
-              <p className={styles.description}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Commodi, magni laborum
-              </p>
+              <p className={styles.description}>America/New_York</p>
             </Col>
 
             <Col span={24} className={styles.map}>
